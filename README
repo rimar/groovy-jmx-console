@@ -12,5 +12,5 @@ Add Groovlets support to you web.xml like this:
     </servlet-mapping>
 
 Then place the jmx.groovy, *.js and *.css files in your war, then access 
-http://localhost:8080/<war_name>/jmx.groovy
+http://localhost:8080/war_name/jmx.groovy
 
