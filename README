@@ -1,0 +1,16 @@
+This is a lightweight JMX console implemented as a Groovlet (Servlet in Groovy)
+
+Add Groovlets support to you web.xml like this:
+
+    <servlet>
+        <servlet-name>Groovy</servlet-name>
+        <servlet-class>groovy.servlet.GroovyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Groovy</servlet-name>
+        <url-pattern>*.groovy</url-pattern>
+    </servlet-mapping>
+
+Then place the jmx.groovy, *.js and *.css files in your war, then access 
+http://localhost:8080/<war_name>/jmx.groovy
+
